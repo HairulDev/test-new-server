@@ -1,0 +1,2278 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API ABM Dashboard",
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000"
+        }
+    ],
+    "paths": {
+        "/api/aging-report-PRPO": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get Aging Report PRPO",
+                "description": "Get a list of aging report PRPO",
+                "operationId": "getAgingReportPRPO",
+                "parameters": [
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard aging report PR PO retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/aging-report-delivery-lead-time": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get Aging Report Delivery Lead Time",
+                "description": "Get a list of aging report delivery lead time",
+                "operationId": "getDeliveryLeadTime",
+                "parameters": [
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard aging report delivery lead time retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/aging-report-PRGR": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get Aging Report PR GR",
+                "description": "Get a list of aging report PR GR",
+                "operationId": "getAgingReportPRGR",
+                "parameters": [
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard aging report PR GR retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/report-lead-time": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get Report Lead Time",
+                "description": "Get a list of report lead time",
+                "operationId": "getReportLeadTime",
+                "parameters": [
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard aging report PR GR retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/drill-through-PRPO": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get drill through PR PO",
+                "description": "Get a list of drill through PR PO",
+                "operationId": "getDrillThroughPRPO",
+                "parameters": [
+                    {
+                        "name": "labetText",
+                        "in": "query",
+                        "description": "Label Text to filter dashboard",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "searchKey",
+                        "in": "query",
+                        "description": "searchKey of data  to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard drill through PR PO retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/drill-through-delivery-lead-time": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get drill through delivery lead time",
+                "description": "Get a list of drill through delivery lead time",
+                "operationId": "getDrillThroughDeliveryLeadtime",
+                "parameters": [
+                    {
+                        "name": "labetText",
+                        "in": "query",
+                        "description": "Label Text to filter dashboard",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "searchKey",
+                        "in": "query",
+                        "description": "searchKey of data  to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard drill through delivery lead time retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/drill-through-PRGR": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get drill through PR GR",
+                "description": "Get a list of drill through PR GR",
+                "operationId": "getDrillThroughPRGR",
+                "parameters": [
+                    {
+                        "name": "labetText",
+                        "in": "query",
+                        "description": "Label Text to filter dashboard",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "searchKey",
+                        "in": "query",
+                        "description": "searchKey of data  to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard drill through PR GR retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/data-detail-excel": {
+            "get": {
+                "tags": [
+                    "Dashboard"
+                ],
+                "summary": "Get data detail excel",
+                "description": "Get a list of data detail excel",
+                "operationId": "getDataDetailExcel",
+                "parameters": [
+                    {
+                        "name": "procrumentType",
+                        "in": "query",
+                        "description": "Procurement Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodStart",
+                        "in": "query",
+                        "description": "Period Start to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "periodEnd",
+                        "in": "query",
+                        "description": "Period End to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaserCode",
+                        "in": "query",
+                        "description": "Purchaser Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyerCode",
+                        "in": "query",
+                        "description": "Company Buyer Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "synergyPurchase",
+                        "in": "query",
+                        "description": "Synergy Purchase to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialGrupCode",
+                        "in": "query",
+                        "description": "Material Grup Code to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "materialType",
+                        "in": "query",
+                        "description": "Material Type to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "Status approval to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "poDate",
+                        "in": "query",
+                        "description": "PODate to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "vendor",
+                        "in": "query",
+                        "description": "Vendor to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "latestGRDate",
+                        "in": "query",
+                        "description": "Latest GR Date to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "fullGRCreateDate",
+                        "in": "query",
+                        "description": "Full GR Create Date to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "fullGRCreateDatePerPO",
+                        "in": "query",
+                        "description": "Full GR Create Date PerPO to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "labelTextGRPO",
+                        "in": "query",
+                        "description": "Label Text GRPO to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "labelTextPRPO",
+                        "in": "query",
+                        "description": "Label Text PRPO to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "searchKey",
+                        "in": "query",
+                        "description": "searchKey of data  to filter dashboard",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Dashboard data detail excel retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Failed to retrieve data from the stored procedure"
+                    }
+                }
+            }
+        },
+        "/api/data-access": {
+            "get": {
+                "tags": [
+                    "DataAccess"
+                ],
+                "summary": "Get data access",
+                "description": "Get a list of data access with optional pagination and search",
+                "operationId": "getDataAccess",
+                "parameters": [
+                    {
+                        "name": "pageParent",
+                        "in": "query",
+                        "description": "Page parent number of the data access",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "limitParent",
+                        "in": "query",
+                        "description": "Number of limit parent data access to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "limitChild",
+                        "in": "query",
+                        "description": "Number of limit child data access to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data access",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by menus",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data access retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/data-access/{id}": {
+            "get": {
+                "tags": [
+                    "DataAccess"
+                ],
+                "summary": "Get data access with ID",
+                "description": "Get a data access with ID",
+                "operationId": "getDataAccessById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the data access",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data access retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/procurement-type": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get procurement types",
+                "description": "Get a list of procurement types with optional pagination and search",
+                "operationId": "getProcurementType",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Procurement type retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/purchaser": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get purchaser",
+                "description": "Get a list of purchaser with optional pagination and search",
+                "operationId": "getPurchaser",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyer",
+                        "in": "query",
+                        "description": "companyBuyer filter",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Purchaser retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/company-buyer": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get company buyer",
+                "description": "Get a list of company buyer with optional pagination and search",
+                "operationId": "getCompanyBuyer",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "choice",
+                        "in": "query",
+                        "description": "Choice to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "purchaser",
+                        "in": "query",
+                        "description": "purchaser filter",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Company buyer retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/synergy-purchase": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get synergy purchase",
+                "description": "Get a list of synergy purchase with optional pagination and search",
+                "operationId": "getSynergyPurchase",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Synergy purchase retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/material-group": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get material group",
+                "description": "Get a list of material group with optional pagination and search",
+                "operationId": "getMaterialGroup",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyer",
+                        "in": "query",
+                        "description": "companyBuyer filter",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Material group retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/material-type": {
+            "get": {
+                "tags": [
+                    "Filter"
+                ],
+                "summary": "Get material type",
+                "description": "Get a list of material type with optional pagination and search",
+                "operationId": "getMaterialType",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of data to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the data",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter data",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "companyBuyer",
+                        "in": "query",
+                        "description": "companyBuyer filter",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Material type retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/menu": {
+            "get": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Get menus",
+                "description": "Get a list of menus with optional pagination and search",
+                "operationId": "getMenus",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of menus to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the menus",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search to filter menus",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by menus",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Menus retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Create a menu",
+                "description": "Create a menu",
+                "operationId": "createMenu",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Id": {
+                                        "description": "ID of the menu",
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "description": "Menu name of the menu",
+                                        "type": "string"
+                                    },
+                                    "Menu_Description": {
+                                        "description": "Menu description of the menu",
+                                        "type": "string"
+                                    },
+                                    "Access": {
+                                        "description": "Access by of the menu",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Menu created successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/menu/{id}": {
+            "get": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Get a menu",
+                "description": "Get a menu with id",
+                "operationId": "getMenu",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the menu",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Menu retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Update a menu",
+                "description": "Update a menu",
+                "operationId": "updateMenu",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the menu",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Menu_Name": {
+                                        "description": "Menu name of the menu",
+                                        "type": "string"
+                                    },
+                                    "Menu_Description": {
+                                        "description": "Menu description of the menu",
+                                        "type": "string"
+                                    },
+                                    "Access": {
+                                        "description": "Access by of the menu",
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Menu updated successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Delete a menu",
+                "description": "Delete an existing menu with ID",
+                "operationId": "deletedMenu",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the menu",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Menu deleted successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/user-access-menu": {
+            "get": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Get user access menu",
+                "description": "Get menus",
+                "operationId": "getUserAccessMenu",
+                "responses": {
+                    "200": {
+                        "description": "User access menu retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/role": {
+            "get": {
+                "tags": [
+                    "Roles"
+                ],
+                "summary": "Get roles",
+                "description": "Get a list of roles with optional pagination and search",
+                "operationId": "getRoles",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of roles to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the roles",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter roles",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by menus",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Roles retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Roles"
+                ],
+                "summary": "Create a role",
+                "description": "Create a role",
+                "operationId": "createRole",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Id": {
+                                        "description": "ID of the role",
+                                        "type": "string"
+                                    },
+                                    "Role_Name": {
+                                        "description": "Role name of the role",
+                                        "type": "string"
+                                    },
+                                    "Role_Description": {
+                                        "description": "Role description of the role",
+                                        "type": "string"
+                                    },
+                                    "Menu_Id": {
+                                        "description": "Array of role IDs associated with the role",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Role created successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/role/{id}": {
+            "get": {
+                "tags": [
+                    "Roles"
+                ],
+                "summary": "Get role",
+                "description": "Get a role with ID",
+                "operationId": "getRole",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the role",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Role retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Roles"
+                ],
+                "summary": "Update a role",
+                "description": "Update a role",
+                "operationId": "updateRole",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the role",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Role_Name": {
+                                        "description": "Role name of the role",
+                                        "type": "string"
+                                    },
+                                    "Role_Description": {
+                                        "description": "Role description of the role",
+                                        "type": "string"
+                                    },
+                                    "Menu_Id": {
+                                        "description": "Array of role IDs associated with the role",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Role updated successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Roles"
+                ],
+                "summary": "Delete a role",
+                "description": "Delete an existing role with ID",
+                "operationId": "deletedRole",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the role",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Role deleted successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/user": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Get users",
+                "description": "Get a list of users with optional pagination and search",
+                "operationId": "getUsers",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Number of users to retrieve per page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 10,
+                            "maximum": 100,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Page number of the users",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "default": 1,
+                            "minimum": 1
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Search term to filter users",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "in": "query",
+                        "description": "Order by menus",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "orderDirection",
+                        "in": "query",
+                        "description": "Order direction asc or desc",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Users retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Create a user",
+                "description": "Create a new user",
+                "operationId": "createUser",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Email": {
+                                        "description": "Email of the user",
+                                        "type": "string"
+                                    },
+                                    "Full_Name": {
+                                        "description": "Full name of the user",
+                                        "type": "string"
+                                    },
+                                    "Role_Id": {
+                                        "description": "Array of role IDs associated with the user",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "Data_Access_Id": {
+                                        "description": "Array of role IDs user data access",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User created successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api/user/{id}": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Get user",
+                "description": "Get a user with ID or Email",
+                "operationId": "getUser",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID or Email of the user",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User retrieved successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Update a user",
+                "description": "Update a new user",
+                "operationId": "updateUser",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the role",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "Email": {
+                                        "description": "Email of the user",
+                                        "type": "string"
+                                    },
+                                    "Full_Name": {
+                                        "description": "Full name of the user",
+                                        "type": "string"
+                                    },
+                                    "Role_Id": {
+                                        "description": "Array of role IDs associated with the user",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "Data_Access_Id": {
+                                        "description": "Array of role IDs user data access",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User updated successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Delete a user",
+                "description": "Delete an existing user with ID",
+                "operationId": "deletedUser",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of the user",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User deleted successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                }
+            }
+        },
+        "/api": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "List."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearer": {
+                "type": "apiKey",
+                "description": "Ex: Bearer {token}",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    },
+    "security": [
+        {
+            "bearer": []
+        }
+    ]
+}

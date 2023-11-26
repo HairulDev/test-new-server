@@ -1,0 +1,70 @@
+{
+    "commit-msg": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "\\Ramsey\\CaptainHook\\ValidateConventionalCommit",
+                "options": {
+                    "config": {
+                        "typeCase": "kebab",
+                        "types": [
+                            "chore",
+                            "ci",
+                            "docs",
+                            "feat",
+                            "fix",
+                            "refactor",
+                            "security",
+                            "style",
+                            "test"
+                        ],
+                        "scopeCase": "kebab",
+                        "scopeRequired": false,
+                        "scopes": [],
+                        "descriptionCase": null,
+                        "descriptionEndMark": "",
+                        "bodyRequired": false,
+                        "bodyWrapWidth": 72,
+                        "requiredFooters": []
+                    }
+                }
+            }
+        ]
+    },
+    "pre-push": {
+        "enabled": false,
+        "actions": []
+    },
+    "pre-commit": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "vendor/bin/pint --test"
+            }
+        ]
+    },
+    "prepare-commit-msg": {
+        "enabled": false,
+        "actions": []
+    },
+    "post-commit": {
+        "enabled": false,
+        "actions": []
+    },
+    "post-merge": {
+        "enabled": false,
+        "actions": []
+    },
+    "post-checkout": {
+        "enabled": false,
+        "actions": []
+    },
+    "post-rewrite": {
+        "enabled": false,
+        "actions": []
+    },
+    "post-change": {
+        "enabled": false,
+        "actions": []
+    }
+}
