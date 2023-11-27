@@ -5,7 +5,7 @@ return [
     'documentations' => [
         'default' => [
             'api' => [
-                'title' => 'ABM Proc Dashboard API',
+                'title' => 'API',
             ],
 
             'routes' => [
